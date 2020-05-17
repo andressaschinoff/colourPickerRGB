@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho Pratico 01</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/range.css" />
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <tr>
+          <th>
+            <label for="red">(R) Vermelho:</label>
+          </th>
+          <td>
+            <input
+              onchange="changeValue('red'); changeColor()"
+              type="range"
+              id="red"
+              min="0"
+              max="255"
+              value="0"
+            />
+          </td>
+          <td>
+            <input type="text" name="r" id="redR" value="0" readonly />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="red">(G) Verde:</label>
+          </th>
+          <td>
+            <input
+              onchange="changeValue('green'); changeColor()"
+              type="range"
+              id="green"
+              min="0"
+              max="255"
+              value="0"
+            />
+          </td>
+          <td>
+            <input type="text" name="r" id="greenR" value="0" readonly />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="red">(B) Azul: </label>
+          </th>
+          <td>
+            <input
+              onchange="changeValue('blue'); changeColor()"
+              type="range"
+              id="blue"
+              min="0"
+              max="255"
+              value="0"
+            />
+          </td>
+          <td>
+            <input type="text" name="r" id="blueR" value="0" readonly />
+          </td>
+        </tr>
+      </table>
+
+      <div id="show-color"></div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

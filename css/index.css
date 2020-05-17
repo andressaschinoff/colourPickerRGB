@@ -1,0 +1,31 @@
+label {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.container {
+  width: 500px;
+  margin-left: 50px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+#show-color {
+  width: 200px;
+  height: 200px;
+  margin: 20px 170px;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+}
+
+th,
+td {
+  padding: 10px 20px;
+}
+
+input[type='text'] {
+  width: 50px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #50555c;
+  text-align: center;
+}
