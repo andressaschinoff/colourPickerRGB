@@ -4,14 +4,14 @@ window.addEventListener('load', (event) => {
 
 function changeValue(inputValue) {
   const color = inputValue;
-  const colorRange = document.querySelector(`#${color}`).value;
-  document.querySelector(`#${color}R`).value = colorRange;
+  const colorRange = document.getElementById(`${color}`).value;
+  document.getElementById(`${color}R`).value = colorRange;
 }
 
 function changeColor() {
-  const red = document.querySelector('#red').value;
-  const green = document.querySelector('#green').value;
-  const blue = document.querySelector('#blue').value;
-  const showColor = document.querySelector('#show-color');
+  const red = document.getElementById('red').value;
+  const green = document.getElementById('green').value;
+  const blue = document.getElementById('blue').value;
+  const showColor = document.getElementById('show-color');
   showColor.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 }
