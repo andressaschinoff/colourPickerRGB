@@ -4,7 +4,7 @@ label {
 }
 
 .container {
-  width: 500px;
+  width: 400px;
   margin-left: 50px;
   margin-top: 50px;
   text-align: left;
@@ -13,14 +13,11 @@ label {
 #show-color {
   width: 200px;
   height: 200px;
-  margin: 20px 170px;
+  margin: 20px 130px;
   border-radius: 15px;
   background-color: rgb(0, 0, 0);
-}
-
-th,
-td {
-  padding: 10px 20px;
+  position: relative;
+  top: 190px;
 }
 
 input[type='text'] {
@@ -28,4 +25,10 @@ input[type='text'] {
   border-radius: 5px;
   box-shadow: 1px 1px 1px #50555c;
   text-align: center;
+}
+
+.box {
+  display: block;
+  float: right;
+  margin: 10px;
 }

@@ -9,66 +9,48 @@
     <link rel="stylesheet" href="./css/range.css" />
   </head>
   <body>
-    <div class="container">
-      <table>
-        <tr>
-          <th>
-            <label for="red">(R) Vermelho:</label>
-          </th>
-          <td>
-            <input
-              onchange="changeValue('red'); changeColor()"
-              type="range"
-              id="red"
-              min="0"
-              max="255"
-              value="0"
-            />
-          </td>
-          <td>
-            <input type="text" name="r" id="redR" value="0" readonly />
-          </td>
-        </tr>
-        <tr>
-          <th>
-            <label for="red">(G) Verde:</label>
-          </th>
-          <td>
-            <input
-              onchange="changeValue('green'); changeColor()"
-              type="range"
-              id="green"
-              min="0"
-              max="255"
-              value="0"
-            />
-          </td>
-          <td>
-            <input type="text" name="r" id="greenR" value="0" readonly />
-          </td>
-        </tr>
-        <tr>
-          <th>
-            <label for="red">(B) Azul: </label>
-          </th>
-          <td>
-            <input
-              onchange="changeValue('blue'); changeColor()"
-              type="range"
-              id="blue"
-              min="0"
-              max="255"
-              value="0"
-            />
-          </td>
-          <td>
-            <input type="text" name="r" id="blueR" value="0" readonly />
-          </td>
-        </tr>
-      </table>
+    <section class="container">
+      <section class="box">
+        <label for="red">(R) Vermelho:</label>
+        <input
+          onchange="changeValue('red'); changeColor()"
+          type="range"
+          id="red"
+          min="0"
+          max="255"
+          value="0"
+        />
+        <input type="text" name="r" id="redR" value="0" readonly />
+      </section>
+
+      <section class="box">
+        <label for="red">(G) Verde:</label>
+        <input
+          onchange="changeValue('green'); changeColor()"
+          type="range"
+          id="green"
+          min="0"
+          max="255"
+          value="0"
+        />
+        <input type="text" name="r" id="greenR" value="0" readonly />
+      </section>
+
+      <section class="box">
+        <label for="red">(B) Azul: </label>
+        <input
+          onchange="changeValue('blue'); changeColor()"
+          type="range"
+          id="blue"
+          min="0"
+          max="255"
+          value="0"
+        />
+        <input type="text" name="r" id="blueR" value="0" readonly />
+      </section>
 
       <div id="show-color"></div>
-    </div>
+    </section>
 
     <script src="./js/app.js"></script>
   </body>
